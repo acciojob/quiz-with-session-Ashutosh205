@@ -1,1 +1,89 @@
 /*  your css code here. If applicable */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Quiz Container */
+#quiz {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Block */
+.question {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.question:last-child {
+    border-bottom: none;
+}
+
+.question p {
+    margin: 0 0 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Options Styling */
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+label input {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+#submit {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto 0;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Score Display */
+#score {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    #quiz {
+        padding: 15px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
